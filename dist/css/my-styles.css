@@ -1,0 +1,20 @@
+.img-thumbnail {
+    clip-path: fill-box;
+    padding: 0;
+}
+a.portfolio-box {
+    height: 167px!important;
+    overflow: hidden;
+}
+.text-muted {
+    color: #646C73 !important;
+  }
+#portfolio {
+    text-align: center;
+    margin: 0 5% 5% 5%;
+}
+@media (max-width: 650px) {
+    #portfolio {
+        margin: 0;
+    }
+}
