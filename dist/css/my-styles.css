@@ -1,3 +1,6 @@
+.slbCaption {
+    overflow: initial;
+}
 .img-thumbnail {
     clip-path: fill-box;
     padding: 0;
@@ -17,4 +20,8 @@ a.portfolio-box {
     #portfolio {
         margin: 0;
     }
+}
+.btn-check .btn:disabled, .btn.disabled, fieldset:disabled .btn .dropdown-item.disabled, .dropdown-item:disabled .nav-link.disabled { 
+    pointer-events: auto!important;
+    cursor: pointer!important;
 }
