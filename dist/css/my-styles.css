@@ -25,3 +25,9 @@ a.portfolio-box {
     pointer-events: auto!important;
     cursor: pointer!important;
 }
+i.bi-envelope.fs-2.mb-3.text-muted:hover {
+    color: #f4623a !important;
+}
+i.bi-instagram.fs-2.mb-3.text-muted:hover {
+    color: #f4623a !important;
+}
