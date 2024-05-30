@@ -21,16 +21,19 @@ the HTML for each card looks like this:
 </div>
 ```
 
-- The href, src path `title`, `project category`, and `project-name` would need updating — if changing out any of the images. The file name under assets needs to match the file path for href and src in the html.
+- The image files names and copy under `href`, `src` path, `title`, `project category`, and `project-name` would need updating — if changing out any of the images. The file name under assets needs to match the file path for href and src in the html.
 
-## After updating in Visual Studio Code, commit and deploy changes to Github, via terminal:
+## Before updating the content (html, images, etc.)
 
 Type in the terminal, cd ~ and click return
-Type, ls and click return 
-Type cd Desktop and click return
-Type ls and click return
+Type, `ls` and click return 
+Type `cd Desktop` and click return
+Type `ls` and click return
 You will now see all of your files listed that you have on your Desktop.
-Type cd peterperspective.github.io-main (or whatever the site file name is that you previously downloaded on your Desktop)
+Type `cd peterperspective.github.io-main` (or whatever the site file name is that you previously downloaded on your Desktop)
+Type `git pull`and click return. If anyone else made any edits to your repo, this command will pull them down to your local computer folder
+
+## After updating in Visual Studio Code, commit and deploy changes to Github, via terminal:
 
 git status and click return
 git add [add files] and click return
