@@ -1,101 +1,43 @@
-<<<<<<< HEAD
-## Hi there 👋
 
-<!--
-**peterperspective/peterperspective** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# How to make updates to this repo
 
-Here are some ideas to get you started:
+## Download site files to your local computer
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-=======
-# [Start Bootstrap - Creative](https://startbootstrap.com/theme/creative/)
+- Click on the 'peterperspective.github.io' repo
+- Click on the green 'Code' button and a dropdown menu appears, click on 'Download ZIP,' save somewhere on your computer. I recommend the Desktop. Open ZIP file (these are all of the files that make up the website).
+- under /dist/assets/img/portfolio/fullsize are all of the images for the portfolio section in order.
+- open the index.html file in Visual Studio code, the portfolio section is under the <!-- Portfolio --> comment section
+the HTML for each card looks like this:
 
-[Creative](https://startbootstrap.com/theme/creative/) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
+```
+<div class="col-lg-4 col-sm-6">
+    <a class="portfolio-box" href="dist/assets/img/portfolio/fullsize/1.jpg" title="Health Awareness - SVA, NYC">
+        <img class="img-thumbnail" src="dist/assets/img/portfolio/fullsize/1.jpg" alt="" />
+        <div class="portfolio-box-caption">
+            <div class="project-category text-wclicke-50">Illustration</div>
+            <div class="project-name">Health Awareness - SVA, NYC</div>
+        </div>
+    </a>
+</div>
+```
 
-## Preview
+- The href, src path `title`, `project category`, and `project-name` would need updating — if changing out any of the images. The file name under assets needs to match the file path for href and src in the html.
 
-[![Creative Preview](https://assets.startbootstrap.com/img/screenshots/themes/creative.png)](https://startbootstrap.github.io/startbootstrap-creative/)
+## After updating in Visual Studio Code, commit and deploy changes to Github, via terminal:
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-creative/)**
+Type in the terminal, cd ~ and click return
+Type, ls and click return 
+Type cd Desktop and click return
+Type ls and click return
+You will now see all of your files listed that you have on your Desktop.
+Type cd peterperspective.github.io-main (or whatever the site file name is that you previously downloaded on your Desktop)
 
-## Status
+git status and click return
+git add [add files] and click return
+git status and click return
+git commit and click return
+(Opens commit window in new tab. type commit message, save and close tab)
+Type `git push peterperspective main`, return
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-creative/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-creative.svg)](https://www.npmjs.com/package/startbootstrap-creative)
-
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-
-- [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/creative/)
-- Install using npm: `npm i startbootstrap-creative`
-- Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-creative.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-creative)
-
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
-
-#### npm Scripts
-
-- `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-- `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-- `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-- `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-- `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-- `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-- `npm run start:debug` runs the project in debug mode
-- `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
-
-You must have npm installed in order to use this build environment.
-
-### Contact Form
-
-The contact form available with this theme is prebuilt to use [SB Forms](https://startbootstrap.com/solution/contact-forms).
-SB Forms is a simple form solution for adding functional forms to your theme. Since this theme is prebuilt using our
-SB Forms markup, all you need to do is sign up for [SB Forms on Start Bootstrap](https://startbootstrap.com/solution/contact-forms).
-
-After signing up you will need to set the domain name your form will be used on, and you will then see your
-access key. Copy this and paste it into the `data-sb-form-api-token='API_TOKEN'` data attribute in place of
-`API_TOKEN`. That's it! Your forms will be up and running!
-
-If you aren't using SB Forms, simply delete the custom data attributes from the form, and remove the link above the
-closing `</body>` tag to SB Forms.
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-creative/issues) here on GitHub or leave a comment on the [theme overview page at Start Bootstrap](https://startbootstrap.com/theme/creative/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap themes and templates. All of the free themes and templates on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-- <https://startbootstrap.com>
-- <https://twitter.com/SBootstrap>
-
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
-
-- <https://davidmiller.io>
-- <https://twitter.com/davidmillerhere>
-- <https://github.com/davidtmiller>
-
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2023 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
->>>>>>> Create new site for peterperspective art
+The changes will be live on website (may take a few minutes, and a hard-refresh of browser)
+https://peterperspective.github.io
