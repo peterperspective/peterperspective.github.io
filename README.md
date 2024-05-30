@@ -37,7 +37,7 @@ git add [add files] and click return
 git status and click return
 git commit and click return
 (Opens commit window in new tab. type commit message, save and close tab)
-Type `git push peterperspective main`, return
+Type `git push peterperspective.github.io main`, return
 
 The changes will be live on website (may take a few minutes, and a hard-refresh of browser)
 https://peterperspective.github.io
