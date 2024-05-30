@@ -53,7 +53,7 @@ the HTML for each card looks like this:
 - For the first time, per computer, type `git push https://github.com/peterperspective/peterperspective.github.io.git`
 - Now type username and password and it should be saved by git.
 
-For continues updates, type `git push peterperspective.github.io main`, return
+For continuous updates, type `git push peterperspective.github.io main`, return
 
 The changes will be live on website (may take a few minutes, and a hard-refresh of browser)
 https://peterperspective.github.io
