@@ -44,10 +44,10 @@ the HTML for each card looks like this:
 ### Commit and deploy changes to Github, via terminal:
 (Repeat everytime updating website)
 
-- git status and click return
-- git add [add files] and click return
-- git status and click return
-- git commit and click return
+- `git status` and click return
+- `git add` [add files] and click return
+- `git status` and click return
+- `git commit` and click return
 (Opens commit window in new tab. type commit message, save and close tab)
 
 - For the first time, per computer, type `git push https://github.com/peterperspective/peterperspective.github.io.git`
