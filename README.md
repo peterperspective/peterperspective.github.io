@@ -25,22 +25,47 @@ the HTML for each card looks like this:
 
 ## Before updating the content (html, images, etc.)
 
-Type in the terminal, cd ~ and click return
-Type, `ls` and click return 
-Type `cd Desktop` and click return
-Type `ls` and click return
-You will now see all of your files listed that you have on your Desktop.
-Type `cd peterperspective.github.io-main` (or whatever the site file name is that you previously downloaded on your Desktop)
-Type `git pull`and click return. If anyone else made any edits to your repo, this command will pull them down to your local computer folder
+- Type in the terminal, cd ~ and click return
+- Type, `ls` and click return 
+- Type `cd Desktop` and click return
+- Type `ls` and click return
+- You will now see all of your files listed that you have on your Desktop.
+- If you saved the website file in another location on your computer, repeat the steps to type `ls` return, and type `cd [file-name]` return, type `ls` return, until you see the new website folder downloaded from Github
+- Type `cd peterperspective.github.io-main` (or whatever the site file name is that you previously downloaded on your Desktop)
+- Type `git pull`and click return. If anyone else made any edits to your repo, this command will pull them down to your local computer folder
 
-## After updating in Visual Studio Code, commit and deploy changes to Github, via terminal:
+## After updating files in Visual Studio Code
 
-git status and click return
-git add [add files] and click return
-git status and click return
-git commit and click return
+### Login into Github via the terminal:
+(Should only need to do the first time, per computer)
+
+- Type `git config --global user.email peterperspective@gmail.com`
+
+### Commit and deploy changes to Github, via terminal:
+(Repeat everytime updating website)
+
+- git status and click return
+- git add [add files] and click return
+- git status and click return
+- git commit and click return
 (Opens commit window in new tab. type commit message, save and close tab)
-Type `git push peterperspective.github.io main`, return
+
+- For the first time, per computer, type `git push https://github.com/peterperspective/peterperspective.github.io.git`
+- Now type username and password and it should be saved by git.
+
+For continues updates, type `git push peterperspective.github.io main`, return
 
 The changes will be live on website (may take a few minutes, and a hard-refresh of browser)
 https://peterperspective.github.io
+
+## Additional readings 
+
+### Getting started with Git
+https://docs.github.com/en/get-started/getting-started-with-git 
+
+#### Git cheatsheat
+https://training.github.com/downloads/github-git-cheat-sheet/
+
+#### Set up Git for new repos
+https://docs.github.com/en/get-started/getting-started-with-git/set-up-git
+
